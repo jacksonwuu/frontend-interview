@@ -1,6 +1,4 @@
-# frontend-interview
-
-前端面试题汇总
+# 前端面试题汇总
 
 ## HTML
 
