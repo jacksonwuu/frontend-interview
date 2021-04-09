@@ -19,11 +19,11 @@
 ## JS
 
 -   基本数据类型有哪些？
-
+    -   在 JavaScript 中，共有 7 种基本类型：string，number，bigint，boolean，null，undefined，symbol (ECMAScript 2016 新增)。
 -   Symbol 是什么？有什么用？有什么特点？
-
+    -   [Symbol 类型](https://zh.javascript.info/symbol)
 -   箭头函数有什么特点？
-
+    -   [箭头函数，基础知识](https://zh.javascript.info/arrow-functions-basics)
 -   Map 和 Object 有什么区别？
 
 -   详细描述一下原型链（是什么？有什么用？有哪些特点？）
