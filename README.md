@@ -10,25 +10,32 @@
 
 -   DOCTYPE 是什么？
 
--   mate 标签有哪些用处？
+    -   [Document type declaration | Wikipedia](https://en.wikipedia.org/wiki/Document_type_declaration)
+    -   [文档类型声明 | MDN](https://developer.mozilla.org/zh-CN/docs/Glossary/Doctype)
+
+-   meta 标签有哪些用处？
 
 -   哪些标签是块级标签/行内标签？
 
 -   有哪些语义化标签？
+    -   [HTML Semantic Elements | w3schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
 
 ## JS
 
 -   基本数据类型有哪些？
     -   在 JavaScript 中，共有 7 种基本类型：string，number，bigint，boolean，null，undefined，symbol (ECMAScript 2016 新增)。
 -   Symbol 是什么？有什么用？有什么特点？
-    -   [Symbol 类型](https://zh.javascript.info/symbol)
+    -   [Symbol | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
+    -   [Symbol 类型 |《现代 JavaScript 教程》](https://zh.javascript.info/symbol)
 -   箭头函数有什么特点？
-    -   [箭头函数，基础知识](https://zh.javascript.info/arrow-functions-basics)
+    -   [箭头函数，基础知识 |《现代 JavaScript 教程》](https://zh.javascript.info/arrow-functions-basics)
 -   Map 和 Object 有什么区别？
 
 -   详细描述一下原型链（是什么？有什么用？有哪些特点？）
 
 -   防抖和节流，以及它们的应用场景？
+
+    -   举在搜索框搜索时的例子来说，防抖就是输完过一会儿出现补全提示，节流就是输入的时候隔一段时间出现一次补全提示，两者都是靠定时器来实现的。
 
 -   详细说说 var、let、const 的区别？
 
@@ -36,7 +43,33 @@
 
 -   什么是闭包？以及它的使用场景？
 
--   如何初始化一个二维数组？
+    -   [闭包 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)
+    -   [变量作用域，闭包 | 《现代 JavaScript 教程》](https://zh.javascript.info/closure)
+    -   [学习 Javascript 闭包 | 阮一峰](https://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)
+
+-   如何初始化一个元素全是 0 的二维数组？
+
+    -   错误的解法：
+
+    ```js
+    let arr = new Array(3).fill(new Array(5).fill(0));
+    ```
+
+    -   正确的解法：
+
+    ```js
+    let arr;
+    for (let i = 0; i < 3; i++) {
+        arr[i] = new Array();
+        for (let j = 0; j < 5; j++) {
+            arr[i][j] = 0;
+        }
+    }
+
+    or;
+
+    let arr = new Array(3).fill(0).map((item) => new Array(5).fill(0));
+    ```
 
 ## CSS
 
@@ -289,3 +322,7 @@
 ## 资源推荐
 
 -   [《现代 JavaScript 教程》](https://zh.javascript.info/)
+
+```
+
+```
