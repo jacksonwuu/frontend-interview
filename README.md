@@ -72,13 +72,17 @@
         ```
 
 -   如何判断一个 Object 对象是否为空？
+
     -   解法一：
+
         ```js
         if (JSON.stringify(obj) === JSON.stringify({})) {
             //obj为空对象
         }
         ```
+
     -   解法二：
+
         ```js
         if (
             obj &&
