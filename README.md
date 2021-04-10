@@ -51,29 +51,50 @@
 
     -   错误的解法：
 
-    ```js
-    let arr = new Array(3).fill(new Array(5).fill(0));
-    ```
+        ```js
+        let arr = new Array(3).fill(new Array(5).fill(0));
+        ```
 
     -   正确的解法：
 
-    ```js
-    let arr;
-    for (let i = 0; i < 3; i++) {
-        arr[i] = new Array();
-        for (let j = 0; j < 5; j++) {
-            arr[i][j] = 0;
+        ```js
+        let arr;
+        for (let i = 0; i < 3; i++) {
+            arr[i] = new Array();
+            for (let j = 0; j < 5; j++) {
+                arr[i][j] = 0;
+            }
         }
-    }
 
-    or;
+        or;
 
-    let arr = new Array(3).fill(0).map((item) => new Array(5).fill(0));
-    ```
+        let arr = new Array(3).fill(0).map((item) => new Array(5).fill(0));
+        ```
+
+-   如何判断一个 Object 对象是否为空？
+    -   解法一：
+        ```js
+        if (JSON.stringify(obj) === JSON.stringify({})) {
+            //obj为空对象
+        }
+        ```
+    -   解法二：
+        ```js
+        if (
+            obj &&
+            Object.keys(obj).length === 0 &&
+            obj.constructor === Object
+        ) {
+            //obj为空对象
+        }
+        ```
 
 ## CSS
 
 -   div 如何垂直水平居中？
+
+    -   绝对定位
+    -   flex
 
 -   CSS 选择器的优先级
 
@@ -161,6 +182,8 @@
 
 -   为什么 HTTPS 是安全的？为什么需要 CA 证书？
 
+-   什么是对称加密，什么是非对称加密？
+
 ## 操作系统
 
 -   线程和进程的区别？
@@ -169,7 +192,7 @@
 
 -   进程间如何通信？
 
-管道, 系统 IPC(消息队列,信号量,共享存储), SOCKET
+    -   管道, 系统 IPC(消息队列,信号量,共享存储), SOCKET
 
 -   什么是进程同步？如何实现？
 
@@ -195,15 +218,25 @@
 
 -   有哪些页面置换算法？
 
+-   什么是文件系统？有哪些常见的文件系统类型？
+
 ## 计算机网络
 
 -   简述 OSI 七层（或 TCP/IP 五层模型）中的每一层以及各自的作用？
+
+    -   七层模型从下往上：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层
+    -   五层模型从下往上：物理层、数据链路层、网络层、传输层、应用层
 
 -   GET 和 POST 的区别？
 
 -   为什么说 POST 比 GET 安全？
 
+    -   其实都不安全，只不过 POST 把请求参数隐藏到请求之中了，而 GET 是直接把请求参数放到 URL 里了。真正的安全还得靠 HTTPS 的非对称加密传输。
+
 -   PUT 和 POST 的区别？
+
+    -   技术上来说两者是一样的，只不过 HTTP 协议对两者做了语义上的区分，反映了请求 URL 的 含义的不同。PUT 是幂等操作，POST 不是幂等操作；PUT 指定具体操作对象，POST 可以不具体指定操作对象。
+    -   [What's the difference between a POST and a PUT HTTP REQUEST? | Stack Overflow](https://stackoverflow.com/questions/107390/whats-the-difference-between-a-post-and-a-put-http-request)
 
 -   HTTP 常见的认证方式？
 
@@ -237,7 +270,11 @@
 
 -   如何在浏览器上建立即时通讯服务？
 
--   CDN 是什么？它的实现原理？
+    -   通过使用浏览器的提供的 WebRTC API ，来建立点对点的网络连接，实现视频流和音频流或者其他任意数据的传输。
+    -   [WebRTC API | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/WebRTC_API)
+    -   [WebRTC | High Performance Browser Networking](https://hpbn.co/webrtc/)
+
+-   CDN 是什么？你对它有多了解？
 
 -   了解 IPv4 协议吗？IPv6 呢？
 
@@ -322,7 +359,3 @@
 ## 资源推荐
 
 -   [《现代 JavaScript 教程》](https://zh.javascript.info/)
-
-```
-
-```
