@@ -18,26 +18,38 @@
 -   哪些标签是块级标签/行内标签？
 
 -   有哪些语义化标签？
+
     -   [HTML Semantic Elements | w3schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
+
+-   什么是 data 属性？
 
 ## JS
 
 -   基本数据类型有哪些？
+
     -   在 JavaScript 中，共有 7 种基本类型：string，number，bigint，boolean，null，undefined，symbol (ECMAScript 2016 新增)。
+
 -   Symbol 是什么？有什么用？有什么特点？
+
     -   [Symbol | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
     -   [Symbol 类型 |《现代 JavaScript 教程》](https://zh.javascript.info/symbol)
+
 -   箭头函数有什么特点？
+
     -   [箭头函数，基础知识 |《现代 JavaScript 教程》](https://zh.javascript.info/arrow-functions-basics)
+
 -   Map 和 Object 有什么区别？
 
 -   详细描述一下原型链（是什么？有什么用？有哪些特点？）
 
 -   防抖和节流，以及它们的应用场景？
 
-    -   举在搜索框搜索时的例子来说，防抖就是输完过一会儿出现补全提示，节流就是输入的时候隔一段时间出现一次补全提示，两者都是靠定时器来实现的。
+    -   举个例子：在搜索框里输入时，防抖就是输完过一会儿出现补全提示，节流就是输入的时候隔一段时间出现一次补全提示，两者都是靠定时器来实现的。
 
 -   详细说说 var、let、const 的区别？
+
+    -   var 是全局作用域，let 和 const 是块级作用域，const 不可以被再次赋值。
+    -   三者都会进行变量提升，但是 let 和 const 不会在变量提升时进行初始化。
 
 -   this 到底指向谁？请分情况说明。
 
@@ -93,6 +105,17 @@
         }
         ```
 
+-   async 和 await 是什么？
+
+    -   简单来说，它们是基基于 promises 的语法糖，使异步代码更易于编写和阅读。通过使用它们，异步代码看起来更像是老式同步代码。
+    -   [async 和 await:让异步编程更简单 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Asynchronous/Async_await)
+
+-   如何进行断点调试？
+
+    -   [在 Chrome 中调试](https://zh.javascript.info/debugging-chrome)
+
+-   说说 for...in 和 for..of 的用法
+
 ## CSS
 
 -   div 如何垂直水平居中？
@@ -101,6 +124,8 @@
     -   flex
 
 -   CSS 选择器的优先级
+
+    -   !important > 内联 > ID 选择器 > 类选择器 > 标签选择器
 
 -   什么是 BFC？
 
@@ -113,6 +138,10 @@
 -   移动端适配是怎么做的？
 
 -   em、rem 怎么使用？
+
+-   如何实现亮/暗模式的切换？如何根据设备的模式自动切换亮/暗模式？
+
+-   getComputedStyle()了解吗？
 
 ## 浏览器
 
@@ -134,6 +163,10 @@
 
 -   如何处理 CPU 消耗型任务的同时保证页面流畅？
 
+-   Cookie、localStorage、sessionStorage 有什么区别？
+
+-   详细说一下 Cookie？
+
 ## React
 
 -   简述 React 的原理？
@@ -145,6 +178,10 @@
 -   React 类组件和函数组件有什么区别？
 
 -   函数组件的生命周期呢？
+
+-   说说 React-Router 的原理？
+
+-   说说 Redux 的原理？
 
 ## Vue
 
@@ -172,9 +209,21 @@
 
 ## 安全
 
+-   跨站和跨域有什么区别？
+
 -   CSRF 是什么，如何防范？
 
+    -   CSRF：跨站请求伪造攻击
+    -   CSRF Token 验证
+    -   Cookie 的 SameSite 属性
+    -   ……
+
 -   XSS 是什么，如何防范？
+
+    -   XSS：跨站脚本攻击
+    -   关键在于对输入和输出进行有效的过滤，前后端都要做防范。
+    -   Cookie 设置为 HttpOnly
+    -   ……
 
 -   SQL 注入是什么，如何防范？
 
@@ -359,6 +408,20 @@
 -   什么是 Web 安全色？
 
 -   为什么要使用 Sass 或 Less？
+
+-   使用过 ESLint 吗？
+
+-   使用过 Prettier 吗？
+
+-   使用过 Electron 吗？
+
+-   使用过 Express 吗？
+
+-   package-lock 文件是干嘛用的？
+
+-   平时如何学习编程知识的？
+
+-   有文字总结的习惯吗？
 
 ## 资源推荐
 
