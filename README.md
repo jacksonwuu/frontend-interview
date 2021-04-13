@@ -127,9 +127,13 @@
 
     -   !important > 内联 > ID 选择器 > 类选择器 > 标签选择器
 
+-   常见布局的实现方式
+
 -   什么是 BFC？
 
 -   如何用 css 实现动画？
+
+    -   两个属性：transition 和 animation
 
 -   如何用 css 画出等腰三角形？
 
@@ -137,11 +141,24 @@
 
 -   移动端适配是怎么做的？
 
+    -   viewport 适配
+    -   媒体查询 + 弹性布局
+    -   rem 适配
+
 -   em、rem 怎么使用？
+
+    -   em 是相对于父元素的字体大小，例如，父元素的字体大小 16px，10em 将等同于 160px。
+    -   rem 是相对于根元素字体大小，例如，根元素的字体大小 16px，10rem 将等同于 160px。
+    -   [何时使用 Em 与 Rem](https://webdesign.tutsplus.com/zh-hans/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984)
+    -   [CSS 的值与单位 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Values_and_units)
 
 -   如何实现亮/暗模式的切换？如何根据设备的模式自动切换亮/暗模式？
 
+    -   利用 CSS 变量和媒体查询 prefers-color-scheme（只有高版本浏览器才支持）
+
 -   getComputedStyle()了解吗？
+
+    -   简单来说就是获取已经应用到元素上的样式清单
 
 ## 浏览器
 
@@ -158,6 +175,8 @@
 -   懒加载和预加载分别是什么？如何实现？
 
 -   前端如何实现文件上传功能？
+
+-   浏览器运行环境下的前端如何做优化？
 
 -   从输入网址到看到页面，这之间发生了什么事情？
 
@@ -185,7 +204,7 @@
 
 ## Vue
 
-待补充
+-   MVVM 是什么？
 
 ## Angular
 
@@ -199,9 +218,21 @@
 
 待补充
 
-## Node
+## NodeJS
 
-待补充
+-   NodeJS 有哪些特点？
+
+-   NodeJS 有什么用？
+
+-   NodeJS 的事件循环是怎么样的？
+
+-   单线程有什么好处？
+
+-   yarn 相比于 npm 有什么改进？
+
+## 微信小程序
+
+-   微信小程序和普通的网页应用有什么不同？
 
 ## Typescript
 
