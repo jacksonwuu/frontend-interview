@@ -212,11 +212,23 @@
 
 ## Webpack
 
-待补充
+-   Webpack 有什么用？
+
+-   说说 Webpack 的原理？
+
+-   Webpack 有哪些配置选项？
+
+-   什么是 loader？有什么用？
+
+-   还接触过哪些打包库？
 
 ## Babel
 
-待补充
+-   Babel 有什么用？
+
+-   说说 Babel 的原理？
+
+-   Babel 有哪些配置选项？
 
 ## NodeJS
 
@@ -267,6 +279,10 @@
 -   为什么 HTTPS 是安全的？为什么需要 CA 证书？
 
 -   什么是对称加密，什么是非对称加密？
+
+## 测试
+
+-   前端项目如何编写测试？
 
 ## 操作系统
 
@@ -426,7 +442,7 @@
 
 -   常用的 git 命令
 
--   什么是 fast-forward
+-   什么是 fast-forward？
 
 -   什么是裸库，什么是非裸库？
 
@@ -435,6 +451,8 @@
 ## 待分类
 
 -   怎么追踪用户页面情况？
+
+-   创建一个前端项目的步骤？
 
 -   什么是 Web 安全色？
 
@@ -446,7 +464,7 @@
 
 -   使用过 Electron 吗？
 
--   使用过 Express 吗？
+-   使用过 Express、EggJS 和 Sails 和吗？
 
 -   package-lock 文件是干嘛用的？
 
@@ -454,6 +472,12 @@
 
 -   有文字总结的习惯吗？
 
+-   前端的前沿了解多少？
+
+-   了解 WebAssembly 吗?
+
 ## 资源推荐
+
+-   [MDN](https://developer.mozilla.org/zh-CN/)
 
 -   [《现代 JavaScript 教程》](https://zh.javascript.info/)
